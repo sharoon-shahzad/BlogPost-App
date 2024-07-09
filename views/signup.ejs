@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create User</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-gradient-to-r from-green-400 to-blue-500">
+      <form
+        action="/register"
+        method="POST"
+        class="flex justify-center h-screen items-center"
+      >
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h1 class="text-2xl font-bold text-center">Create User</h1>
+
+          <div class="mt-4">
+            <label for="username" class="block">UserName</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="w-full p-2 border border-gray-300 rounded-lg"
+              required
+              placeholder="Enter your username"
+              autofocus
+            />
+          </div>
+
+          <div class="mt-4">
+            <label for="name" class="block">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="w-full p-2 border border-gray-300 rounded-lg"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div class="mt-4">
+            <label for="age" class="block">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              class="w-full p-2 border border-gray-300 rounded-lg"
+              required
+              placeholder="Enter your age"
+            />
+          </div>
+
+          <div class="mt-4">
+            <label for="email" class="block">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="w-full p-2 border border-gray-300 rounded-lg"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="mt-4">
+            <label for="password" class="block">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="w-full p-2 border border-gray-300 rounded-lg"
+              required
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <div class="mt-4">
+            <button
+              type="submit"
+              class="w-full bg-blue-500 text-white p-2 rounded-lg"
+            >
+              Create Account!
+            </button>
+          </div>
+
+          <div class="mt-4 text-center">
+            <p>
+              Already have an account? 
+              <a href="/login" class="text-blue-500 underline">Login</a>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
